@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/hover-min.css" rel="stylesheet" media="all">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="css/font-awesome.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body id="thisdiv">
+  <article >
+    <div class="row" >
+      <br><br>
+      <div class="col-md-1">
+      <ul>
+        <li  class="hvr-float-shadow"><img id=sonido class="button hvr-pulse" style="cursor:pointer" alt="imagen1" src="images/nota.png"  onclick="pause()" data-toggle="tooltip"  data-placement="right"  title="play" ><a href="#"></a></li>
+      </ul>
+      </div>
+      <div class="col-md-8" id=escenario>
+        <div id="personaje" class="esperando"></div>
+        <div id="piedra1"></div>
+        <div id="piedra2"></div>
+        <div id="piedra3"></div>
+        <div id="piedra4"></div>
+        <div id="piedra5"></div>
+        <div id="terreno"></div>
+        <div id="fondo"></div>
+        <div id="nubes"></div>
+        <div id="palmeras1"></div>
+        <div id="palmeras2"></div>
+        <div id="vidas"></div>
+        <div id="toasty"></div>
+        <button id="score" type="button" name="button"></button>
+      </div><br><br>
+      <div class="col-md-1">
+      <div class="hvr-float-shadow "><img class="button  hvr-pulse" style="cursor:pointer" id=jugardenuevo alt="imagen1" src="images/sonicportada.png"  onclick="jugar()" data-toggle="tooltip"  data-placement="top"  title="Jugar!" ></div>
+      </div>
+      <div class="col-md-1 ">
+        <br>
+        <div><span id=glyp class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div>
+        <div><span id=glyp class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div>
+        <div><span id=glyp class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div>
+      </div>
+    </div>
+    <audio id=sonic>
+        <source src=sound/sonic.mp3 >
+    </audio>
+    <audio id=salto>
+        <source src=sound/saltar.mp3>
+    </audio>
+    <audio id=corre>
+        <source src=sound/correr.mp3>
+    </audio>
+    <audio id=rueda>
+        <source src=sound/rodar.mp3>
+    </audio>
+    <audio id=pier>
+        <source src=sound/anillos.mp3>
+    </audio>
+    <audio id=toast>
+        <source src=sound/toasty.mp3>
+    </audio>
+    <div class="" >
+      <br><br><br>
+    </div>
+    <div class="col-md-3 col-md-offset-2">
+      <img alt="LOGO" src="images/sega.gif"><br><br><br>
+    </div>
+    <div class="col-md-3">
+      <br><br>
+      <span id=instruccion>Saltar: Flecha arriba  </span><span  class="glyphicon glyphicon-open"> </span><br><br>
+      <span id=instruccion >Rodar: Flecha abajo  </span><span class="glyphicon glyphicon-save"> </span><br><br>
+      <span id=instruccion>Correr: Flecha derecha  (+10 score) </span><span  class="glyphicon glyphicon-forward"> </span><br><br>
+    </div>
+    <div class="col-md-1 col-md-offset-1">
+      <div class="historial">
+        <span id=instruccion>Historial </span><span  class="glyphicon glyphicon-list-alt"> </span><br><br>
+      </div>
+    </div>
+  </article>
+  <footer>
+      <div class="row">
+          <div class="modal-footer col-md-7 col-md-offset-1">
+            <a class="navbar-brand" href="https://plus.google.com/u/0/109404910695779449858/posts" target="_blank">
+              <div class="hvr-float-shadow" >
+                <img class="hvr-buzz" alt="Google+" src="images/footer_google.png">
+              </div>
+            </a>
+
+            <a class="navbar-brand "href="https://es-la.facebook.com/fninni" target="_blank">
+              <div class="hvr-float-shadow" >
+                <img class="hvr-buzz" alt="Facebook" src="images/footer_face.png">
+              </div>
+            </a>
+
+            <a class="navbar-brand"href="https://twitter.com/facuninni" target="_blank">
+              <div class="hvr-float-shadow" >
+                <img class="hvr-buzz" alt="Twitter" src="images/footer_twitter.png">
+              </div>
+            </a>
+        </div>
+          <div class="modal-footer col-md-3">
+            <div class="" >
+            <a class="navbar-brand" target="_blank">
+            <img id="logo" alt="LOGO" src="images/logo.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </footer>
+  </body>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sonic.js">
+  </script>
+</html>

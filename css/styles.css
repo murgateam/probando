@@ -1,0 +1,222 @@
+
+body {
+  background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.glyphicon{color: rgb(226, 232, 220);}
+
+#logo{margin-top: -10px;}
+#fuentes{font-family: Calibri;}
+body{
+  background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1 );}
+
+#instruccion{font-family: Calibri;
+  font-size: 15px;
+color: rgb(226, 232, 220);}
+
+.historial{
+  font-family: Calibri;
+    font-size: 15px;
+  color: rgb(226, 232, 220);
+
+  text-align: center;
+  margin-left: -10px;margin-right: -10px;
+}
+.histo{
+    background-color: rgba(98,125,77,1);
+}
+#escenario{position: relative;
+  width: 900px;
+  height: 300px;
+  background-color: rgb(236, 236, 236);
+  z-index: -9;
+}
+
+.esperando{
+  position: absolute;
+  width: 40px;
+  height: 39px;
+  left: 200px;top: 200px;
+  background-image: url("../images/espera.png");
+  -webkit-animation: espera 1.80s steps(8) infinite;
+  z-index: 0;
+}
+.corriendo{
+  position: absolute;
+  width: 48px;
+  height: 57px;
+  margin-left: -10px;
+  margin-top: -10px;
+  left: 200px;top: 200px;
+  background-image: url("../images/camina.png");
+  -webkit-animation: correr .6s steps(6) infinite;
+  z-index: 0;
+}
+.saltar{
+  position: absolute;
+  width: 48px;
+  height: 57px;
+  margin-left: -10px;
+  margin-top: -10px;
+  left: 200px;top: 200px;
+  background-image: url("../images/saltar.png");
+  -webkit-animation: saltar .5s steps(5) infinite;
+  z-index: 0;
+}
+.correrapido{
+  position: absolute;
+  width: 48px;
+  height: 57px;
+  margin-left: -10px;
+  margin-top: -10px;
+  left: 200px;top: 200px;
+  background-image: url("../images/correrapido.png");
+  -webkit-animation: correrapido .6s steps(4) infinite;
+  z-index: 0;
+}
+.rodar{
+  position: absolute;
+  width: 40px;
+  height: 36px;
+  left: 200px;top: 200px;
+  background-image: url("../images/rodar.png");
+  -webkit-animation: rodar .6s steps(6) infinite;
+  z-index: 0;
+}
+.perdio{
+  position: absolute;
+  width: 43px;
+  height: 52px;
+  left: 200px;top: 190px;
+  background-image: url("../images/perdio.png");
+  -webkit-animation: perdio .6s steps(5);
+  z-index: 0;
+}
+#terreno{
+  position: absolute;
+  width: 900px;
+  height: 79px;
+  left: 0px;top: 235px;
+  background-image: url("../images/2.png");
+  -webkit-animation: terreno 1.2s steps(1);
+  z-index: -5;
+}
+#piedra1, #piedra2, #piedra3, #piedra4, #piedra5{
+  position: absolute;
+  width: 16px;
+  height: 13px;
+  left: 880px;top: 229px;
+  background-image: url("../images/piedra.png");
+  -webkit-animation: piedra 12s steps(1);
+  z-index: -1;
+}
+#palmeras1{
+  position: absolute;
+  width: 111px;
+  height: 300px;
+  left: -38px;top: 204px;
+  background-repeat: no-repeat;
+  background-image: url("../images/palmeras.png");
+  z-index: 0;
+}
+#palmeras2{
+  position: absolute;
+  width: 111px;
+  height: 300px;
+  left: 858px;top: 204px;
+  background-repeat: no-repeat;
+  background-image: url("../images/palmeras2.png");
+  z-index: 0;
+}
+#fondo{
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 0px;top: 0px;
+  background-repeat: no-repeat;
+  background-image: url("../images/fondo.png");
+  z-index: -8;
+}
+#nubes{
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 0px;top: 0px;
+  background-repeat: no-repeat;
+  background-image: url("../images/0.png");
+  -webkit-animation: nube 120.0s steps(1500) infinite;
+  z-index: -7;
+}
+#vidas{
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 10px;top: 10px;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+#score{
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  left: 750px;
+  top:10px;
+}
+#toasty{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 830px;top: 164px;
+  background-repeat: no-repeat;
+  background-image: url("../images/toasty.png");
+  -webkit-animation: toasty 10.0s steps(1) infinite;
+  z-index: -10;
+}
+@-webkit-keyframes toasty {
+  from { background-position:    0px; }
+    to { background-position: -70px; }
+}
+
+@-webkit-keyframes perdio {
+  from { background-position:    0px; }
+    to { background-position: -255px; }
+}
+@-webkit-keyframes nube {
+  from { background-position:    0px; }
+    to { background-position: -3016px; }
+}
+@-webkit-keyframes correr {
+  from { background-position:    0px; }
+    to { background-position: -288px; }
+}
+
+@-webkit-keyframes saltar {
+  from { background-position:    0px; }
+    to { background-position: -239px; }
+}
+
+@-webkit-keyframes espera {
+  from { background-position:    0px; }
+    to { background-position: -339.5px; }
+}
+
+@-webkit-keyframes correrapido {
+  from { background-position:    0px; }
+    to { background-position: -198px; }
+}
+@-webkit-keyframes rodar {
+  from { background-position:    0px; }
+    to { background-position: -288px; }
+}
+@-webkit-keyframes terreno {
+  from { background-position:    0px; }
+    to { background-position: -1920px; }
+}
+@-webkit-keyframes piedra {
+  from { background-position:    0px; }
+    to { background-position: -16px; }
+}
